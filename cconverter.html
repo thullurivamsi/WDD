@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/25409945dd.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="cconverter.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="robots" content="none,noarchive"/>
+</head>
+
+<body>
+    <div class="main_container">
+        <form id="form" class="container-0">
+            <h1 class="heading">Currency Converter</h1>
+            <div class="container-1">
+                <div class="container-2">
+                    <input id="input" type="number" class="box" />
+                    <div class="container-3">
+                        <p class="symbol" id="givenSymbol">$</p>
+                        <p class="c_name" id="cName1"></p>
+                        <select class="select_box" id="input_country"></select>
+                    </div>
+                </div>
+                <button type="submit" class="btn" id="btn"><i class="fa-solid fa-money-bill-transfer"></i></button>
+                <div class="container-2">
+                    <p id="output" class="box">0</p>
+                    <div class="container-3">
+                        <p class="symbol" id="shownSymbol">₹</p>
+                        <p class="c_name" id="cName2"></p>
+                        <select class="select_box" id="output_country"></select>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+<script src="cconverter.js"></script>
+</body>
+
+</html>

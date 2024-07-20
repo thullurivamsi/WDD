@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    --clr1: #797B7A;
+    --clr2: #0AD46F;
+    --bgcolor: var(--clr1);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main_container {
+    background-color: #353434;
+    background-image: url("https://i.pinimg.com/564x/14/a2/e9/14a2e9e7b979f28a274621bcdaf38751.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.heading {
+    color: #D6D4D4;
+    font-family: "Roboto";
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 600;
+    background-color: #201E1E;
+    margin-bottom: 3px;
+}
+
+.container-0 {
+    min-width: 470px;
+    width: 100vw;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgcolor);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 3px var(--bgcolor);
+    border: solid var(--bgcolor) 3px;
+    overflow: hidden;
+    opacity: 0.97;
+}
+
+
+.container-1 {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #201E1E;
+}
+
+.container-2 {
+    display: flex;
+    background-color: #353434;
+    justify-content: space-between;
+    width: 100%;
+    border: solid var(--bgcolor);
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn {
+    position: absolute;
+    color: green;
+    font-size: 20px;
+    border: solid var(--bgcolor) 3px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #201E1E;
+    transform: rotate(-90deg);
+    box-shadow: 0px 0px 20px 2px var(--bgcolor);
+}
+
+.btn:hover {
+    scale: 1.2;
+}
+
+.btn:active {
+    scale: 1;
+}
+
+.box {
+    width: 150px;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    color: #D6D4D4;
+    font-family: "Roboto";
+    border: none;
+}
+
+
+.container-3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #201E1E;
+    align-items: center;
+    padding: 10px;
+    border: solid var(--bgcolor);
+    width: 230px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.select_box {
+    max-width: 120px;
+    background-color: #201E1E;
+    font-size: 15px;
+    font-weight: 600;
+    color: #484B4A;
+    border: none;
+    font-family: "Roboto";
+}
+
+.symbol {
+    --size: 40px;
+    color: white;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+#givenSymbol {
+    /* background-color:#4AF4B1; */
+    background-color: #00E171;
+}
+
+#shownSymbol {
+    background-color: #F48106;
+}
+
+.c_name {
+    position: relative;
+    right: 0;
+    font-family: "Roboto";
+    color: #D6D4D4;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:469px) {
+    .c_name {
+        font-size: 10px;
+    }
+
+    .select_box {
+        font-size: 10px;
+    }
+
+    .container-3 {
+        width: 200px;
+        padding: 5px;
+    }
+
+    .box {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .btn {
+        height: 45px;
+        width: 45px;
+        font-size: 20px;
+        left: 150px;
+    }
+
+    .symbol {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .container-2 {
+        width: 100%;
+        padding: 7px;
+        margin: 10px;
+    }
+
+    .container-1 {
+        padding: 15px;
+    }
+
+    .container-0 {
+        min-width: 353px;
+        width: 100vw;
+        max-width: 470px;
+    }
+}
